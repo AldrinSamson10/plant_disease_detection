@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Plant Disease Detection | PlantAI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+    <div class="logo">
+        🌱 PlantAI
+    </div>
+    <nav class="nav">
+        <a href="/">Home</a>
+        <a href="/detect">Detect</a>
+        <a href="/library">Library</a>
+        <a href="/action-guide">Action Guide</a>
+        <a href="/about">About</a>
+    </nav>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <h1>AI-Based Plant Disease Detection & Advisory System</h1>
+    <p>
+        Identify plant diseases early using artificial intelligence
+        and receive clear treatment and prevention guidance.
+    </p>
+
+    <!-- ✅ Fixed route -->
+    <a href="/" class="btn-primary">
+        ▶ Start Online
+    </a>
+</section>
+
+<!-- FEATURES -->
+<section class="features">
+    <div class="feature-card">
+        <h3>🤖 AI-Powered Detection</h3>
+        <p>
+            Upload a plant leaf image and let AI detect the disease
+            with confidence-based prediction.
+        </p>
+    </div>
+
+    <div class="feature-card">
+        <h3>🌱 Early Advisory Support</h3>
+        <p>
+            Understand disease severity and prevent crop damage
+            at an early stage.
+        </p>
+    </div>
+
+    <div class="feature-card">
+        <h3>📊 Action-Oriented Guidance</h3>
+        <p>
+            Receive simple and practical treatment and prevention
+            recommendations.
+        </p>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <p>
+        Advisory support only. Please consult agricultural experts
+        for critical decisions.
+    </p>
+    <p>© 2026 Plant Disease Detection System</p>
+</footer>
+
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+</body>
+</html>

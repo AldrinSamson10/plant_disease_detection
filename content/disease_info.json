@@ -1,0 +1,33 @@
+{
+  "Healthy": {
+    "severity": "Healthy",
+    "image": "/static/images/diseases/healthy.jpg",
+    "description": "The leaf shows no visible signs of disease and appears healthy.",
+    "treatment": "No treatment required.",
+    "prevention": "Maintain good plant care."
+  },
+
+  "Powdery_Mildew": {
+    "severity": "Moderate",
+    "image": "/static/images/diseases/powdery_mildew.jpg",
+    "description": "White powdery fungal growth on leaf surfaces.",
+    "treatment": "Use sulfur or neem oil.",
+    "prevention": "Ensure airflow and reduce humidity."
+  },
+
+  "Leaf_Rust": {
+    "severity": "Moderate",
+    "image": "/static/images/diseases/leaf_rust.jpg",
+    "description": "Rust-colored spots that weaken leaves.",
+    "treatment": "Remove infected leaves and apply fungicide.",
+    "prevention": "Avoid overhead watering."
+  },
+
+  "Early_Blight": {
+    "severity": "Severe",
+    "image": "/static/images/diseases/early_blight.jpg",
+    "description": "Dark circular spots causing leaf drop and yield loss.",
+    "treatment": "Apply copper-based fungicide immediately.",
+    "prevention": "Practice crop rotation."
+  }
+}

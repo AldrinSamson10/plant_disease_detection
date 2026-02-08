@@ -1,0 +1,49 @@
+{
+  "Healthy": {
+    "title": "Healthy Plant – Preventive Care",
+    "severity": "Healthy",
+    "actions": [
+      "Continue regular watering schedule",
+      "Ensure sufficient sunlight exposure",
+      "Maintain balanced soil nutrients",
+      "Inspect leaves weekly for early symptoms"
+    ],
+    "note": "No treatment required. Focus on prevention and monitoring."
+  },
+
+  "Mild": {
+    "title": "Mild Infection – Early Action Recommended",
+    "severity": "Mild",
+    "actions": [
+      "Monitor plant daily for symptom changes",
+      "Remove lightly affected leaves",
+      "Use organic sprays like neem oil",
+      "Improve air circulation around the plant"
+    ],
+    "note": "Early treatment can prevent disease spread."
+  },
+
+  "Moderate": {
+    "title": "Moderate Infection – Immediate Treatment Needed",
+    "severity": "Moderate",
+    "actions": [
+      "Apply recommended fungicides",
+      "Isolate the affected plant if possible",
+      "Avoid overhead watering",
+      "Disinfect gardening tools after use"
+    ],
+    "note": "Delay may cause significant crop damage."
+  },
+
+  "Severe": {
+    "title": "Severe Infection – Critical Condition",
+    "severity": "Severe",
+    "actions": [
+      "Consult an agricultural expert immediately",
+      "Remove severely infected plants",
+      "Prevent spread to nearby crops",
+      "Consider replanting if damage is extensive"
+    ],
+    "note": "Severe cases may result in yield loss."
+  }
+}

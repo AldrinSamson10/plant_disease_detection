@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Detect Disease | PlantAI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}">
+</head>
+<body>
+
+<header class="top-bar">
+    <div class="logo">🌱 PlantAI</div>
+    <nav class="top-nav">
+        <a href="/dashboard">Dashboard</a>
+        <a href="/detect" class="active">Detect</a>
+        <a href="/library">Library</a>
+        <a href="/action-guide">Action Guide</a>
+        <a href="/about">About</a>
+    </nav>
+</header>
+
+<section class="detect-section">
+
+    <h1>Detect Plant Disease</h1>
+    <p class="subtitle">
+        Upload a clear plant leaf image and analyze its health condition.
+    </p>
+
+    <!-- UPLOAD FORM -->
+    <form action="/detect" method="POST" enctype="multipart/form-data" class="upload-box">
+
+        <input
+            type="file"
+            name="image"
+            id="imageInput"
+            accept="image/*"
+            capture="environment"
+            hidden
+            required
+        >
+
+        <label for="imageInput" class="upload-btn">
+            ➕ Add Leaf Image
+        </label>
+
+        <!-- IMAGE SELECT STATUS -->
+        <p id="fileStatus" class="file-status">
+            No image selected
+        </p>
+
+        <!-- PREVIEW BEFORE ANALYZE -->
+        <div class="preview-box">
+            <img id="previewImage" alt="Preview" style="display:none;">
+        </div>
+
+        <button type="submit" class="analyze-btn" id="analyzeBtn" disabled>
+            🔍 Analyze Leaf
+        </button>
+
+    </form>
+
+    <!-- RESULT SECTION -->
+    {% if image_url and result %}
+    <div class="result-container">
+
+        <div class="result-image">
+            <img src="{{ image_url }}" alt="Uploaded Leaf Image">
+        </div>
+
+        <div class="result-box">
+            <h2>{{ result.disease }}</h2>
+
+            <p><strong>Confidence:</strong> {{ result.confidence }}</p>
+            <p>{{ result.description }}</p>
+
+            <h3>Treatment</h3>
+            <p>{{ result.treatment }}</p>
+
+            <h3>Prevention</h3>
+            <p>{{ result.prevention }}</p>
+        </div>
+
+    </div>
+    {% endif %}
+
+</section>
+
+<script src="{{ url_for('static', filename='js/detect.js') }}"></script>
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+</body>
+</html>

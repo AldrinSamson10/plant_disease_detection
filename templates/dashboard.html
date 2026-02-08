@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Dashboard | PlantAI</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: linear-gradient(120deg, #e8f5e9, #f1f8f4);
+    color: #2f2f2f;
+}
+
+/* ===== TOP BAR ===== */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 40px;
+    background: rgba(255,255,255,0.85);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1b5e20;
+}
+
+.top-nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #444;
+    font-weight: 500;
+}
+
+.top-nav a:hover {
+    color: #1b5e20;
+}
+
+/* ===== HERO ===== */
+.hero {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 40px;
+    padding: 70px 8%;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 46px;
+    color: #1b5e20;
+    margin-bottom: 16px;
+}
+
+.hero p {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #555;
+}
+
+.hero-badges {
+    margin-top: 25px;
+}
+
+.hero-badges span {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 8px 14px;
+    border-radius: 20px;
+    background: #1b5e20;
+    color: white;
+    font-size: 13px;
+}
+
+/* ===== IMAGE ===== */
+.hero img {
+    width: 100%;
+    border-radius: 28px;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.25);
+}
+
+/* ===== STATS ===== */
+.stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 20px;
+    padding: 0 8% 40px;
+}
+
+.stat {
+    background: rgba(255,255,255,0.85);
+    backdrop-filter: blur(12px);
+    border-radius: 18px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+}
+
+.stat h2 {
+    color: #1b5e20;
+    font-size: 32px;
+}
+
+.stat p {
+    color: #555;
+    margin-top: 6px;
+}
+
+/* ===== FEATURE CARDS ===== */
+.cards {
+    padding: 30px 8% 80px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+    gap: 28px;
+}
+
+.card {
+    background: rgba(255,255,255,0.9);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 22px;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 28px 60px rgba(0,0,0,0.18);
+}
+
+.card h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #1b5e20;
+}
+
+.card p {
+    font-size: 14.5px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    text-align: center;
+    padding: 25px;
+    font-size: 13px;
+    color: #777;
+}
+</style>
+</head>
+
+<body>
+
+<header class="top-bar">
+    <div class="logo">🌱 PlantAI</div>
+    <nav class="top-nav">
+        <a href="/">Dashboard</a>
+        <a href="/detect">Detect</a>
+        <a href="/library">Library</a>
+        <a href="/action-guide">Action Guide</a>
+        <a href="/about">About</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div>
+        <h1>AI-Based Plant Health Assistant</h1>
+        <p>
+            An intelligent system that detects plant diseases from leaf images,
+            explains severity levels, and guides farmers with actionable insights
+            at the right time.
+        </p>
+
+        <div class="hero-badges">
+            <span>AI Powered</span>
+            <span>Image Based</span>
+            <span>Early Detection</span>
+        </div>
+    </div>
+
+    <!-- DEFAULT IMAGE -->
+    <img src="/static/images/ui/dashboard_leaf.jpg" alt="Plant Leaf">
+</section>
+
+<section class="stats">
+    <div class="stat">
+        <h2>4+</h2>
+        <p>Diseases Covered</p>
+    </div>
+    <div class="stat">
+        <h2>AI</h2>
+        <p>Deep Learning Model</p>
+    </div>
+    <div class="stat">
+        <h2>Fast</h2>
+        <p>Instant Detection</p>
+    </div>
+</section>
+
+<section class="cards">
+
+    <a href="/detect" class="card">
+        <h3>🌿 Detect Disease</h3>
+        <p>Upload a plant leaf image and let AI identify the disease with confidence.</p>
+    </a>
+
+    <a href="/library" class="card">
+        <h3>📚 Disease Library</h3>
+        <p>Explore diseases with images, causes, severity levels, and prevention.</p>
+    </a>
+
+    <a href="/action-guide" class="card">
+        <h3>⚠️ Severity & Action Guide</h3>
+        <p>Understand mild, moderate, and severe stages with recommended actions.</p>
+    </a>
+
+    <a href="/about" class="card">
+        <h3>ℹ️ About System</h3>
+        <p>Learn how the system works, technology used, and developer details.</p>
+    </a>
+
+</section>
+
+<div class="footer">
+    © 2026 PlantAI — AI-Driven Plant Disease Detection System
+</div>
+
+</body>
+</html>

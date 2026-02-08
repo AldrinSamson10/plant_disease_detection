@@ -1,0 +1,28 @@
+{
+  "watering": {
+    "description": "Proper watering is essential for healthy plant growth.",
+    "tips": [
+      "Water plants early in the morning",
+      "Avoid overwatering",
+      "Ensure proper drainage"
+    ]
+  },
+
+  "sunlight": {
+    "description": "Sunlight is crucial for photosynthesis.",
+    "tips": [
+      "Ensure at least 6 hours of sunlight daily",
+      "Avoid extreme heat exposure",
+      "Rotate plants for uniform growth"
+    ]
+  },
+
+  "soil": {
+    "description": "Healthy soil provides nutrients for plant development.",
+    "tips": [
+      "Use nutrient-rich soil",
+      "Add organic compost",
+      "Check soil pH periodically"
+    ]
+  }
+}

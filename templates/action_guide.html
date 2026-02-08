@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Action Guide | PlantAI</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: #f4f7f5;
+    color: #333;
+}
+
+/* ===== NAV BAR ===== */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #2e7d32;
+}
+
+.top-nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+}
+
+.top-nav a:hover {
+    color: #2e7d32;
+}
+
+/* ===== HEADER ===== */
+.header {
+    text-align: center;
+    padding: 40px 20px 20px;
+}
+
+.header h1 {
+    font-size: 34px;
+    color: #2e7d32;
+}
+
+/* ===== ACTION CARDS ===== */
+.guide-container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+.action-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.action-card h2 {
+    margin-top: 0;
+    color: #2e7d32;
+}
+
+.badge {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.Healthy { background: #2e7d32; }
+.Mild { background: #66bb6a; }
+.Moderate { background: #f9a825; }
+.Severe { background: #c62828; }
+
+.action-card ul {
+    padding-left: 20px;
+}
+
+.action-card li {
+    margin-bottom: 8px;
+}
+
+.note {
+    margin-top: 15px;
+    font-style: italic;
+    color: #555;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<header class="top-bar">
+    <div class="logo">🌱 PlantAI</div>
+    <nav class="top-nav">
+        <a href="/dashboard">Dashboard</a>
+        <a href="/detect">Detect</a>
+        <a href="/library">Library</a>
+        <a href="/action-guide">Action Guide</a>
+        <a href="/about">About</a>
+    </nav>
+</header>
+
+<!-- HEADER -->
+<section class="header">
+    <h1>Severity & Action Guide</h1>
+    <p>Clear actions based on disease severity levels.</p>
+</section>
+
+<!-- ACTION GUIDE -->
+<div class="guide-container">
+
+{% for key, guide in guides.items() %}
+<div class="action-card">
+    <span class="badge {{ guide.severity }}">
+        {{ guide.severity }}
+    </span>
+
+    <h2>{{ guide.title }}</h2>
+
+    <ul>
+        {% for action in guide.actions %}
+        <li>{{ action }}</li>
+        {% endfor %}
+    </ul>
+
+    <div class="note">
+        {{ guide.note }}
+    </div>
+</div>
+{% endfor %}
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>About | PlantAI</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: #f4f7f5;
+    color: #333;
+}
+
+/* NAV BAR */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #2e7d32;
+}
+
+.top-nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+}
+
+.top-nav a:hover {
+    color: #2e7d32;
+}
+
+/* PAGE */
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+h1 {
+    color: #2e7d32;
+}
+
+.section {
+    background: #ffffff;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.section h2 {
+    color: #2e7d32;
+    margin-top: 0;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* DEVELOPER CARD */
+.dev-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.dev-card a {
+    color: #2e7d32;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.dev-card a:hover {
+    text-decoration: underline;
+}
+
+/* TAGS */
+.tag {
+    display: inline-block;
+    padding: 6px 14px;
+    background: #e8f5e9;
+    border-radius: 20px;
+    font-size: 13px;
+    margin-right: 8px;
+    margin-top: 8px;
+}
+</style>
+</head>
+
+<body>
+
+<header class="top-bar">
+    <div class="logo">🌱 PlantAI</div>
+    <nav class="top-nav">
+        <a href="/dashboard">Dashboard</a>
+        <a href="/detect">Detect</a>
+        <a href="/library">Library</a>
+        <a href="/action-guide">Action Guide</a>
+        <a href="/about">About</a>
+    </nav>
+</header>
+
+<div class="container">
+
+    <!-- ABOUT SYSTEM -->
+    <div class="section">
+        <h1>About PlantAI</h1>
+        <p>
+            <strong>PlantAI</strong> is an AI-powered Plant Disease Detection and Advisory System
+            designed to assist farmers, students, and researchers in identifying plant diseases
+            at an early stage using image-based analysis.
+        </p>
+        <p>
+            The system combines deep learning with practical agricultural knowledge
+            to provide diagnosis, confidence levels, and action guidance in a simple and
+            user-friendly interface.
+        </p>
+    </div>
+
+    <!-- HOW AI WORKS -->
+    <div class="section">
+        <h2>How This AI System Works</h2>
+        <ul>
+            <li>User uploads or captures a plant leaf image</li>
+            <li>Image is processed and normalized</li>
+            <li>A trained deep learning model analyzes disease patterns</li>
+            <li>The system predicts disease type with confidence score</li>
+            <li>Relevant prevention and action guidance is displayed</li>
+        </ul>
+        <div class="tag">Deep Learning</div>
+        <div class="tag">Image Classification</div>
+        <div class="tag">AI-Driven Decision Support</div>
+    </div>
+
+    <!-- LIMITATIONS -->
+    <div class="section">
+        <h2>System Limitations</h2>
+        <ul>
+            <li>Prediction accuracy depends on image clarity and lighting</li>
+            <li>Model is trained on limited disease categories</li>
+            <li>Environmental factors are not directly analyzed</li>
+            <li>Results are advisory, not a replacement for experts</li>
+        </ul>
+    </div>
+
+    <!-- FUTURE SCOPE -->
+    <div class="section">
+        <h2>Future Vision</h2>
+        <ul>
+            <li>Support for more crops and diseases</li>
+            <li>Real-time mobile camera detection</li>
+            <li>AI confidence improvement using feedback</li>
+            <li>Integration with IoT and climate data</li>
+        </ul>
+    </div>
+
+    <!-- DEVELOPER -->
+    <div class="section">
+        <h2>Project Developer</h2>
+        <div class="dev-card">
+    <strong>Aldrin Samson</strong>
+    <span>AI & Computer Science Enthusiast</span>
+
+    <a href="https://www.linkedin.com/in/aldrinsamson0520/" target="_blank">
+        🔗 LinkedIn Profile
+    </a>
+
+    <a href="https://github.com/AldrinSamson10?tab=repositories" target="_blank">
+        💻 GitHub Repository
+    </a>
+
+    <span>© 2026 PlantAI</span>
+</div>
+    </div>
+
+</div>
+
+</body>
+</html>
