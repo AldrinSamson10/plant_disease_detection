@@ -1,105 +1,26 @@
-PlantAI – AI Based Plant Disease Detection System
+# Plant Disease Detection System
 
-PlantAI is a web-based application that uses artificial intelligence to detect plant leaf diseases through image analysis. Users can upload or capture a plant leaf image, and the system predicts the disease, severity level, and provides basic treatment and prevention guidance. The goal is early detection and better crop health support.
+PlantAI is an AI-powered web application that detects plant leaf diseases using image analysis. Users can upload or capture leaf images to identify diseases, understand severity levels, and receive actionable crop care guidance.
 
---------------------------------------------------
+## Features
+- AI-based plant disease detection from leaf images  
+- Disease library with symptoms and prevention tips  
+- Severity & action guide for informed decisions  
+- Clean, responsive web interface using Flask  
 
-Features
+## Tech Stack
+- Python, Flask  
+- TensorFlow / Keras (CNN model)  
+- HTML, CSS, JavaScript  
 
-- Image-based plant disease detection
-- Deep learning model for disease classification
-- Confidence score with severity level
-- Disease library with images and descriptions
-- Severity and action guide
-- Crop care and prevention advisory
-- Responsive and user-friendly interface
+## Use Case
+Designed for farmers, students, and researchers to identify plant diseases early and reduce crop loss through timely action.
 
---------------------------------------------------
+## Project Status
+Actively developed and improved with focus on usability, performance, and accuracy.
 
-Technology Stack
+## Developer
+Developed by **Aldrin Samson**
 
-Backend:
-Python, Flask
-
-AI and Machine Learning:
-TensorFlow, Keras (CNN model)
-
-Frontend:
-HTML, CSS, JavaScript
-
-Data Handling:
-JSON
-
---------------------------------------------------
-
-Project Structure
-
-plant_disease_detection/
-│
-├── app.py
-│
-├── model/
-│   ├── plant_disease_model.h5
-│   └── labels.txt
-│
-├── content/
-│   └── disease_info.json
-│
-├── static/
-│   ├── css/
-│   │   ├── dashboard.css
-│   │   └── main.css
-│   │
-│   ├── js/
-│   │   └── detect.js
-│   │
-│   └── images/
-│       └── diseases/
-│           ├── healthy.jpg
-│           ├── powdery_mildew.jpg
-│           ├── leaf_rust.jpg
-│           └── early_blight.jpg
-│
-├── templates/
-│   ├── dashboard.html
-│   ├── detect.html
-│   ├── library.html
-│   ├── action_guide.html
-│   └── about.html
-│
-└── README.md
-
---------------------------------------------------
-
-How the System Works
-
-1. The user uploads or captures a plant leaf image.
-2. The image is preprocessed and passed to a trained deep learning model.
-3. The model predicts the disease class and confidence score.
-4. Disease details, severity level, treatment, and prevention information are displayed.
-
---------------------------------------------------
-
-Limitations
-
-- Prediction accuracy depends on image clarity and lighting.
-- Only trained disease classes can be detected.
-- This system is not a replacement for professional agricultural diagnosis.
-
---------------------------------------------------
-
-Developer Information
-
-Developed by: Aldrin Samson
-
-LinkedIn:
-https://www.linkedin.com/in/aldrin-samson
-
-GitHub:
-https://github.com/AldrinSamson10
-
---------------------------------------------------
-
-License
-
-This project is intended for learning, demonstration, and portfolio purposes.
+- LinkedIn: https://www.linkedin.com/in/aldrin-samson  
+- GitHub: https://github.com/AldrinSamson10

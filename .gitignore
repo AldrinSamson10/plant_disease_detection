@@ -1,1 +1,71 @@
+# =========================
+# Project-specific ignores
+# =========================
+
+# Trained ML model (DO NOT upload to GitHub)
 model/plant_disease_model.h5
+
+# Uploaded images
+uploads/
+
+# Dataset folders
+dataset/
+data/
+
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[codz]
+*$py.class
+
+# Virtual environments
+.env
+.envrc
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# =========================
+# Flask
+# =========================
+instance/
+.webassets-cache
+
+# =========================
+# Build / Distribution
+# =========================
+build/
+dist/
+*.egg-info/
+.eggs/
+wheels/
+
+# =========================
+# Logs & cache
+# =========================
+*.log
+.coverage
+.cache/
+.pytest_cache/
+.mypy_cache/
+
+# =========================
+# Jupyter
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Editors
+# =========================
+.vscode/
+.idea/
